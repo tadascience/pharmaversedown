@@ -26,6 +26,7 @@ write_pkg_info <- function() {
     }
   })
 
+  writeLines("# generated with pharmaversedown::write_pkg_info()")
   writeLines("pkg_info = {}")
   writeLines(glue::glue('pkg_info["{pkgs}"] = {{ url = "{urls}", title = "{titles}" }}'))
 }
