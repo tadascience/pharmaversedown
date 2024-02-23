@@ -14,3 +14,5 @@ Imports:
     glue,
     jsonlite,
     rlang
+URL: https://github.com/tadascience/pharmaversedown
+BugReports: https://github.com/tadascience/pharmaversedown/issues
