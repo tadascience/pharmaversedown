@@ -1,5 +1,10 @@
-write_pkg_info <- function() {
 
+#' Write the pkg_info for the pkg shortcode
+#'
+#' @importFrom jsonlite fromJSON
+#' @export
+write_pkg_info <- function() {
+  pharmaverse_universe_data <- fromJSON("https://pharmaverse.r-universe.dev/api/packages/")
   pkgs <- pharmaverse_universe_data$Package
   titles <- gsub("\n", " ", pharmaverse_universe_data$Title)
 
